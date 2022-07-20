@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".insertShipTime"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_sec">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:background="@android:color/holo_blue_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:text="@string/update_vessel_information"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/scnNumberTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/scn_number"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/scnNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/insert_scn_number"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/browser_actions_title_color"
+            app:layout_constraintStart_toStartOf="@+id/scnNumberTitle"
+            app:layout_constraintTop_toBottomOf="@+id/scnNumberTitle" />
+
+        <TextView
+            android:id="@+id/vesselIDTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/vessel_id"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/scnNumber"
+            app:layout_constraintTop_toBottomOf="@+id/scnNumber" />
+
+        <EditText
+            android:id="@+id/vesselID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/insert_vessel_id"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/browser_actions_title_color"
+            app:layout_constraintStart_toStartOf="@+id/vesselIDTitle"
+            app:layout_constraintTop_toBottomOf="@+id/vesselIDTitle" />
+
+        <TextView
+            android:id="@+id/vesselNameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/vessel_name"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/vesselID"
+            app:layout_constraintTop_toBottomOf="@+id/vesselID" />
+
+        <EditText
+            android:id="@+id/vesselName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/insert_vessel_name"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/browser_actions_title_color"
+            app:layout_constraintStart_toStartOf="@+id/vesselNameTitle"
+            app:layout_constraintTop_toBottomOf="@+id/vesselNameTitle" />
+
+        <TextView
+            android:id="@+id/entryPointTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/entry_point"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/vesselName"
+            app:layout_constraintTop_toBottomOf="@+id/vesselName" />
+
+        <Spinner
+            android:id="@+id/entryPointSpinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:entries="@array/entryPoint"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/entryPointTitle"
+            app:layout_constraintTop_toBottomOf="@+id/entryPointTitle" />
+
+        <TextView
+            android:id="@+id/locationTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/location"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/entryPointSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/entryPointSpinner" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/insert_location"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/browser_actions_title_color"
+            app:layout_constraintStart_toStartOf="@+id/locationTitle"
+            app:layout_constraintTop_toBottomOf="@+id/locationTitle" />
+
+        <TextView
+            android:id="@+id/terminalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/terminal"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/location"
+            app:layout_constraintTop_toBottomOf="@+id/location" />
+
+        <Spinner
+            android:id="@+id/terminalSpinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:entries="@array/terminal"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/terminalTitle"
+            app:layout_constraintTop_toBottomOf="@+id/terminalTitle" />
+
+        <TextView
+            android:id="@+id/agentNameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/agent_name"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/terminalSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/terminalSpinner" />
+
+        <EditText
+            android:id="@+id/agentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:hint="@string/insert_agent_name"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:textColorHint="@color/browser_actions_title_color"
+            app:layout_constraintStart_toStartOf="@+id/agentNameTitle"
+            app:layout_constraintTop_toBottomOf="@+id/agentNameTitle" />
+
+        <TextView
+            android:id="@+id/arrivalNameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/arrival_date"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/agentName"
+            app:layout_constraintTop_toBottomOf="@+id/agentName" />
+
+        <EditText
+            android:id="@+id/arrivalDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:ems="10"
+            android:inputType="datetime"
+            android:textColor="@color/black"
+            android:textColorHint="@color/browser_actions_title_color"
+            app:layout_constraintStart_toStartOf="@+id/arrivalNameTitle"
+            app:layout_constraintTop_toBottomOf="@+id/arrivalNameTitle" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="50dp"
+            android:text="@string/submit"
+            android:textColor="@color/black"
+            app:backgroundTint="@android:color/holo_blue_dark"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/arrivalDate"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

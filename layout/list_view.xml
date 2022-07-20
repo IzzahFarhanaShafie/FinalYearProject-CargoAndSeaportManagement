@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:id="@+id/staffname_tv"
+        android:textSize="14dp"
+        android:text="staff name"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:id="@+id/shipid_tv"
+        android:textSize="14dp"
+        android:text="ship id"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:id="@+id/dutyschedule_tv"
+        android:textSize="14dp"
+        android:text="dutyschedule"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+</LinearLayout>

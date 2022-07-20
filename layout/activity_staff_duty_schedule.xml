@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".staffDutySchedule"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="70dp"
+                    android:background="@android:color/holo_blue_dark"
+                    android:paddingBottom="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="STAFF DUTY SCHEDULE"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/view3"
+                    app:layout_constraintEnd_toEndOf="@+id/view3"
+                    app:layout_constraintStart_toStartOf="@+id/view3"
+                    app:layout_constraintTop_toTopOf="@+id/view3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <SearchView
+                android:id="@+id/searchview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:queryHint="Search staffname / shipid"
+                android:iconifiedByDefault="false" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1,2,3"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <TableRow>
+                    <TextView
+                        android:text="STAFF NAME"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:gravity="center"
+                        android:layout_column="1"
+                        android:layout_width="140dp"/>
+                    <TextView
+                        android:text="SHIP ID"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:gravity="center"
+                        android:layout_column="1"
+                        android:layout_width="110dp"/>
+                    <TextView
+                        android:text="DUTY TIME"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:padding="3dp"
+                        android:gravity="center"
+                        android:layout_column="1"
+                        android:layout_width="100dp"/>
+
+                </TableRow>
+            </TableLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:padding="5dp">
+
+                    <ListView
+                        android:id="@+id/myListView"
+                        android:layout_width="match_parent"
+                        android:layout_height="617dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"/>
+
+                </LinearLayout>
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:id="@+id/recyclerview_dutyschedule"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content" />-->
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

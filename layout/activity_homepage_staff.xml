@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_sec"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context=".homepageStaff"
+    tools:openDrawer="start">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/main_menu" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@android:color/holo_blue_dark"
+                        android:paddingBottom="30sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/holo_blue_dark"
+                        android:minHeight="?attr/actionBarSize"
+                        android:theme="?attr/actionBarTheme"
+                        app:layout_constraintBottom_toBottomOf="@+id/view"
+                        app:layout_constraintEnd_toEndOf="@+id/view"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/view"
+                        app:navigationIcon="@drawable/ic_baseline_menu_24" />
+
+                    <TextView
+                        android:id="@+id/pageTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/homepage"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/view" />
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/banner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="SEAPORT"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/banner3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15sp"
+                    android:fontFamily="@font/abril_fatface"
+                    android:text="MANAGEMENT"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <View
+                        android:id="@+id/viewFunction"
+                        android:layout_width="310dp"
+                        android:layout_height="220sp"
+                        android:layout_margin="20sp"
+                        android:background="@color/white"
+                        android:clickable="false"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.493"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageStaffDutySchedule"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/viewFunction"
+                        app:layout_constraintEnd_toEndOf="@+id/viewFunction"
+                        app:layout_constraintStart_toStartOf="@+id/viewFunction"
+                        app:layout_constraintTop_toTopOf="@+id/viewFunction"
+                        app:layout_constraintVertical_bias="0.07999998"
+                        app:srcCompat="@drawable/staff_duty_schedule" />
+
+                    <TextView
+                        android:id="@+id/textStaffDutySchedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Staff Duty \n Schedule"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/imageStaffDutySchedule"
+                        app:layout_constraintStart_toStartOf="@+id/imageStaffDutySchedule"
+                        app:layout_constraintTop_toBottomOf="@+id/imageStaffDutySchedule" />
+
+                    <ImageView
+                        android:id="@+id/imageAssignStaffShift"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintBottom_toTopOf="@+id/textStaffDutySchedule"
+                        app:layout_constraintEnd_toEndOf="@+id/viewFunction"
+                        app:layout_constraintHorizontal_bias="0.52"
+                        app:layout_constraintStart_toEndOf="@+id/imageStaffDutySchedule"
+                        app:layout_constraintTop_toTopOf="@+id/imageStaffDutySchedule"
+                        app:srcCompat="@drawable/assign_staff" />
+
+                    <TextView
+                        android:id="@+id/textAssignStaffShift"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Assign Staff \n Shifts"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/imageAssignStaffShift"
+                        app:layout_constraintStart_toStartOf="@+id/imageAssignStaffShift"
+                        app:layout_constraintTop_toBottomOf="@+id/imageAssignStaffShift" />
+
+                    <ImageView
+                        android:id="@+id/imageUpdateVesselInfo"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintBottom_toTopOf="@+id/textStaffDutySchedule"
+                        app:layout_constraintEnd_toStartOf="@+id/imageStaffDutySchedule"
+                        app:layout_constraintStart_toStartOf="@+id/viewFunction"
+                        app:layout_constraintTop_toTopOf="@+id/imageStaffDutySchedule"
+                        app:srcCompat="@drawable/update_vessel" />
+
+                    <TextView
+                        android:id="@+id/textUpdateVesselInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Update Vessel \n Info"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/imageUpdateVesselInfo"
+                        app:layout_constraintStart_toStartOf="@+id/imageUpdateVesselInfo"
+                        app:layout_constraintTop_toBottomOf="@+id/imageUpdateVesselInfo" />
+
+                    <ImageView
+                        android:id="@+id/imageVesselSchedule"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="13dp"
+                        app:layout_constraintEnd_toStartOf="@+id/imageStaffDutySchedule"
+                        app:layout_constraintStart_toEndOf="@+id/imageUpdateVesselInfo"
+                        app:layout_constraintTop_toBottomOf="@+id/textStaffDutySchedule"
+                        app:srcCompat="@drawable/ship_real_time" />
+
+                    <TextView
+                        android:id="@+id/textVesselSchedule"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Vessel \n Schedule"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/imageVesselSchedule"
+                        app:layout_constraintHorizontal_bias="0.428"
+                        app:layout_constraintStart_toStartOf="@+id/imageVesselSchedule"
+                        app:layout_constraintTop_toBottomOf="@+id/imageVesselSchedule" />
+
+                    <ImageView
+                        android:id="@+id/imageStaffList"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageVesselSchedule"
+                        app:layout_constraintEnd_toStartOf="@+id/imageAssignStaffShift"
+                        app:layout_constraintStart_toEndOf="@+id/imageStaffDutySchedule"
+                        app:layout_constraintTop_toTopOf="@+id/imageVesselSchedule"
+                        android:src="@drawable/ic_baseline_person_24"/>
+
+                    <TextView
+                        android:id="@+id/textStaffList"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Staff \n List"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/imageStaffList"
+                        app:layout_constraintStart_toStartOf="@+id/imageStaffList"
+                        app:layout_constraintTop_toBottomOf="@+id/imageStaffList" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/announcement_recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="310dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp" />
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/message_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:elevation="6dp"
+            android:src="@drawable/ic_baseline_message_24"
+            app:fabSize="normal" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

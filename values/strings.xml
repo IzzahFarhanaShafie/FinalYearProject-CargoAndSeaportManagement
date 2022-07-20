@@ -1,0 +1,76 @@
+<resources>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="app_name">Cargo Tracker</string>
+    <string name="cargo_tracker">CARGO TRACKER</string>
+    <string name="seaport_manager">SEAPORT MANAGER</string>
+    <string name="password">Password</string>
+    <string name="staff_id">Staff ID</string>
+    <string name="login">Login</string>
+    <string name="and"><![CDATA[&]]></string>
+    <string name="logout">Logout</string>
+    <string name="ic_number">IC NUMBER</string>
+    <string name="desc">Image</string>
+    <string name="my_profile">My Profile</string>
+    <string name="textview1">TextView</string>
+    <string name="full_name">FULL NAME</string>
+    <string name="wharf">WHARF</string>
+    <string name="textview2">TextView</string>
+    <string name="textview3">TextView</string>
+    <string name="port">PORT</string>
+    <string name="textview4">TextView</string>
+    <string name="email">EMAIL</string>
+    <string name="textview5">TextView</string>
+    <string name="textview6">TextView</string>
+    <string name="staff_id_profile">STAFF ID</string>
+    <string name="position">POSITION</string>
+    <string name="textview7">TextView</string>
+    <string name="textview8">TextView</string>
+    <string name="phone_number">PHONE NUMBER</string>
+    <string name="homepage">HOMEPAGE</string>
+    <string name="user">USER :</string>
+    <string name="userHomepage">TextView</string>
+    <string name="cargo_tracker_seaport_manager"><![CDATA[CARGO TRACKER \n & \n SEAPORT MANAGER]]></string>
+    <string name="update_vessel_information">UPDATE VESSEL INFORMATION</string>
+    <string name="scn_number">SCN NUMBER</string>
+    <string name="insert_vessel_id">Insert Vessel ID</string>
+    <string name="insert_location">Insert Location</string>
+    <string name="insert_agent_name">Insert Agent Name</string>
+    <string name="insert_scn_number">Insert SCN Number</string>
+    <string name="insert_vessel_name">Insert Vessel Name</string>
+    <string name="vessel_id">VESSEL ID</string>
+    <string name="terminal">TERMINAL</string>
+    <string name="arrival_date">ARRIVAL DATE</string>
+    <string name="submit">Submit</string>
+    <string name="location">LOCATION</string>
+    <string name="vessel_name">VESSEL NAME</string>
+    <string name="entry_point">ENTRY POINT</string>
+    <string name="agent_name">AGENT NAME</string>
+    <string name="message">Message</string>
+    <string name="user_name">User Name</string>
+
+    <array name="entryPoint">
+        <item>PINTU GEDUNG</item>
+        <item>PULAU ANGSA</item>
+    </array>
+
+    <array name="terminal">
+        <item>WESTPORTS</item>
+        <item>NORTHPORT</item>
+        <item>WESTPORTS AND NORTHPORT</item>
+        <item>PRIVATE JETTY</item>
+        <item>OPL-LPK MALAYSIA</item>
+    </array>
+
+    <array name="wharfName">
+        <item>W10 NORTHPORT</item>
+        <item>B06 WESTPORTS</item>
+        <item>B16 WESTPORTS</item>
+        <item>B09 WESTPORTS</item>
+    </array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dataupdated">Data Updated</string>
+</resources>

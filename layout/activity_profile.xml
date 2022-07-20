@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/loginParent"
+    tools:context=".profile">
+
+    <ScrollView
+        style="@style/parent">
+
+        <RelativeLayout
+            style="@style/parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:weightSum="12">
+
+                <LinearLayout
+                    style="@style/parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/login_shape_bk"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        style="@style/parent"
+                        android:background="@drawable/ic_login_bk"
+                        android:contentDescription="login background" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardElevation="10dp"
+                    app:cardMaxElevation="10dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="15dp">
+
+                        <TextView
+                            android:id="@+id/myprofiletitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/my_profile"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center"
+                            app:layout_constraintVertical_bias="0.75" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_person_24"
+                            app:civ_border_color="@color/white"
+                            app:civ_border_width="2dp"
+                            android:id="@+id/profilePic"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Name"
+                            android:textSize="17dp"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="15dp"
+                            android:id="@+id/fullname"
+                            android:gravity="center" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="STAFF ID"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:id="@+id/staffid"
+                            android:textColor="#404040"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="IC NUMBER"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:id="@+id/icnumber"
+                            android:textColor="#404040"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="EMAIL"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:id="@+id/emailprofile"
+                            android:textColor="#404040"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="PHONE NUMBER"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:id="@+id/phonenumber"
+                            android:textColor="#404040"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="PORT"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:id="@+id/port"
+                            android:textColor="#404040"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="POSITION"                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:id="@+id/position"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#404040" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:text="WHARF"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:textColor="@color/black"/>
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:id="@+id/wharf"
+                            android:textColor="#404040"/>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

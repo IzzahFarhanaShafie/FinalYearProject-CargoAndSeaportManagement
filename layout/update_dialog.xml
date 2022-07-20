@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Staff Name"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"/>
+    <Spinner
+        android:id="@+id/updateStaffName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="0dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20sp"/>
+
+    <EditText
+        android:id="@+id/updatedetailsDutySchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:ems="10"
+        android:hint="New Duty Schedule"
+        android:inputType="datetime"
+        android:paddingTop="0dp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/updatedutydetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="0dp"
+        android:textColor="@color/white"
+        android:hint="New Duty Details"
+        android:ems="10"
+        android:layout_margin="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Manager In Charge"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+    <Spinner
+        android:id="@+id/updatemanagerincharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="0dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Wharf Name"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+    <Spinner
+        android:id="@+id/updatewharfname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:entries="@array/wharfName"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Ship need to be handled"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+    <Spinner
+        android:id="@+id/updateshipneedtobehandled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="0dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="20sp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnupdate"
+        android:text="Update" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btndelete"
+        android:text="Delete" />
+
+</LinearLayout>

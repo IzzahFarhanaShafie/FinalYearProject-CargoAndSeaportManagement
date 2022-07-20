@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".insertStaffShift"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_sec">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:background="@android:color/holo_blue_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:text="ASSIGN STAFF SHIFTS"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/staffNameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="STAFF NAME"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.14"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Spinner
+            android:id="@+id/staffNameSpinner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:textColorHint="@color/browser_actions_title_color"
+            app:layout_constraintStart_toStartOf="@+id/staffNameTitle"
+            app:layout_constraintTop_toBottomOf="@+id/staffNameTitle" />
+
+        <TextView
+            android:id="@+id/dutyScheduleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="DUTY SCHEDULE"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/staffNameSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/staffNameSpinner" />
+
+        <EditText
+            android:id="@+id/dutyScheduleDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="datetime"
+            android:textColor="@color/black"
+            android:textColorHint="@color/browser_actions_title_color"
+            app:layout_constraintStart_toStartOf="@+id/dutyScheduleTitle"
+            app:layout_constraintTop_toBottomOf="@+id/dutyScheduleTitle" />
+
+        <TextView
+            android:id="@+id/dutyDetailsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="DUTY DETAILS"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/dutyScheduleDate"
+            app:layout_constraintTop_toBottomOf="@+id/dutyScheduleDate" />
+
+        <EditText
+            android:id="@+id/dutyDetailsEdittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:textColor="@color/black"
+            android:textColorHint="@color/browser_actions_title_color"
+            app:layout_constraintStart_toStartOf="@+id/dutyDetailsTitle"
+            app:layout_constraintTop_toBottomOf="@+id/dutyDetailsTitle" />
+
+        <TextView
+            android:id="@+id/managerinchargeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MANAGER IN CHARGE"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/dutyDetailsEdittext"
+            app:layout_constraintTop_toBottomOf="@+id/dutyDetailsEdittext" />
+
+        <Spinner
+            android:id="@+id/managerinchargeSpinner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="@string/insert_scn_number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/browser_actions_title_color"
+            app:layout_constraintStart_toStartOf="@+id/managerinchargeTitle"
+            app:layout_constraintTop_toBottomOf="@+id/managerinchargeTitle" />
+
+        <TextView
+            android:id="@+id/wharfTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="WHARF"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/managerinchargeSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/managerinchargeSpinner" />
+
+        <Spinner
+            android:id="@+id/wharfSpinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:entries="@array/wharfName"
+            app:layout_constraintStart_toStartOf="@+id/wharfTitle"
+            app:layout_constraintTop_toBottomOf="@+id/wharfTitle" />
+
+        <TextView
+            android:id="@+id/shipneedtobehandledTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="SHIP NEED TO BE HANDLED"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/wharfSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/wharfSpinner" />
+
+        <Spinner
+            android:id="@+id/shipneedtobehandledSpinner"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            app:layout_constraintStart_toStartOf="@+id/shipneedtobehandledTitle"
+            app:layout_constraintTop_toBottomOf="@+id/shipneedtobehandledTitle" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Submit"
+            app:layout_constraintStart_toEndOf="@+id/shipneedtobehandledSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/shipneedtobehandledSpinner" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

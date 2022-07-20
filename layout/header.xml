@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="275dp"
+    android:background="@android:color/holo_blue_dark"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:id="@+id/nav_profile"
+        android:src="@drawable/shipppp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seaport \n Management"
+        android:id="@+id/nav_name"
+        android:fontFamily="@font/abril_fatface"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+</LinearLayout>

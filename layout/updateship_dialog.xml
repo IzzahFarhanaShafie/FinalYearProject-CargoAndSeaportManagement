@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New SCN Number"
+        android:textSize="15sp"
+        android:textColorHint="#404040"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+    <EditText
+        android:id="@+id/updateScnNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="0dp"
+        android:textSize="15sp"
+        android:textColor="#404040"
+        android:hint="New SCN Number"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="11sp"/>
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Vessel ID"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+    <EditText
+        android:textSize="15sp"
+        android:id="@+id/updatevesselid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="0dp"
+        android:textColorHint="#404040"
+        android:textColor="@color/black"
+        android:hint="New Vessel ID"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Vessel Name"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+    <EditText
+        android:id="@+id/updatevesselname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="0dp"
+        android:textSize="15sp"
+        android:textColorHint="#404040"
+        android:textColor="@color/black"
+        android:hint="New Vessel Name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Entry Point Name"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+    <Spinner
+        android:id="@+id/updateentrypoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:entries="@array/entryPoint"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="10sp"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Location"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+    <EditText
+        android:id="@+id/updatelocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:paddingTop="0dp"
+        android:textColorHint="#404040"
+        android:textColor="@color/black"
+        android:hint="New Location"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="10sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Terminal"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+    <Spinner
+        android:id="@+id/updateterminal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:entries="@array/terminal"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Agent Name"
+        android:textSize="15sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/updateagentname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="0dp"
+        android:textSize="15sp"
+        android:textColorHint="#404040"
+        android:textColor="@color/black"
+        android:hint="New Agent Name"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20sp"/>
+
+    <TextView
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Arrival Date"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/updatearrivaldate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20sp"
+        android:hint="New Arrival Date"
+        android:textSize="15sp"
+        android:inputType="datetime"
+        android:textColor="@color/black" />
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnupdatee"
+        android:text="Update" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btndeletee"
+        android:text="Delete" />
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white">
+
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="110dp"
+        android:layout_height="65dp"
+        android:id="@+id/shippid_tv"
+        android:textSize="14dp"
+        android:text="Ship ID"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center"/>
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="140dp"
+        android:layout_height="65dp"
+        android:id="@+id/shipname_tv"
+        android:textSize="14dp"
+        android:text="Ship Name"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"/>
+    <TextView
+        android:textColor="@color/black"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:id="@+id/shiptime_tv"
+        android:textSize="14dp"
+        android:text="Arrival Time"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+</LinearLayout>

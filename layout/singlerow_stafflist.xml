@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/relativeLayoutstafflist">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_baseline_person_24"
+            android:layout_centerVertical="true"
+            android:id="@+id/imageview_stafflist"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_stafflist"
+            android:text="Name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_toRightOf="@id/imageview_stafflist"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_marginBottom="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/staffid_stafflist"
+            android:text="staffid"
+            android:textSize="15sp"
+            android:layout_toRightOf="@id/imageview_stafflist"
+            android:layout_below="@+id/name_stafflist"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/usertype_stafflist"
+            android:text="usertype"
+            android:textSize="15sp"
+            android:layout_below="@+id/staffid_stafflist"
+            android:layout_toRightOf="@id/imageview_stafflist"
+            android:layout_marginLeft="10dp"/>
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
